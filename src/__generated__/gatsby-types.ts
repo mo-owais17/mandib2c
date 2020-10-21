@@ -4832,18 +4832,7 @@ type Unnamed_1_Query = { readonly allShopifyProduct: { readonly edges: ReadonlyA
 type Unnamed_2_QueryVariables = {};
 
 
-type Unnamed_2_Query = { readonly prismic: { readonly allCommons: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: (
-          Pick<PRISMIC_Common, 'copyright_text'>
-          & { readonly social_links: Maybe<ReadonlyArray<(
-            Pick<PRISMIC_CommonSocial_links, 'social_type'>
-            & { readonly social_link: Maybe<Pick<PRISMIC__ExternalLink, 'url'>> }
-          )>> }
-        ) }>>> } } };
-
-type Unnamed_3_QueryVariables = {};
-
-
-type Unnamed_3_Query = { readonly allShopifyProduct: { readonly edges: ReadonlyArray<{ readonly node: (
+type Unnamed_2_Query = { readonly allShopifyProduct: { readonly edges: ReadonlyArray<{ readonly node: (
         Pick<ShopifyProduct, 'id' | 'title' | 'handle' | 'createdAt' | 'shopifyId' | 'availableForSale'>
         & { readonly variants: Maybe<ReadonlyArray<Maybe<(
           Pick<ShopifyProductVariant, 'id' | 'price' | 'shopifyId' | 'availableForSale'>
@@ -4854,39 +4843,10 @@ type Unnamed_3_Query = { readonly allShopifyProduct: { readonly edges: ReadonlyA
         )>>> }
       ) }> } };
 
-type Unnamed_4_QueryVariables = {};
+type Unnamed_3_QueryVariables = {};
 
 
-type Unnamed_4_Query = { readonly prismic: { readonly firstData: (
-      Pick<PRISMIC_CategoryConnectionConnection, 'totalCount'>
-      & { readonly edges: Maybe<ReadonlyArray<Maybe<(
-        Pick<PRISMIC_CategoryConnectionEdge, 'cursor'>
-        & { readonly node: (
-          Pick<PRISMIC_Category, 'title'>
-          & { readonly _meta: Pick<PRISMIC_Meta, 'uid'>, readonly parent_category: Maybe<(
-            Pick<PRISMIC_Category, 'title'>
-            & { readonly _meta: Pick<PRISMIC_Meta, 'uid'> }
-          )> }
-        ) }
-      )>>>, readonly pageInfo: Pick<PRISMIC_PageInfo, 'hasNextPage' | 'endCursor'> }
-    ), readonly lastData: (
-      Pick<PRISMIC_CategoryConnectionConnection, 'totalCount'>
-      & { readonly edges: Maybe<ReadonlyArray<Maybe<(
-        Pick<PRISMIC_CategoryConnectionEdge, 'cursor'>
-        & { readonly node: (
-          Pick<PRISMIC_Category, 'title'>
-          & { readonly _meta: Pick<PRISMIC_Meta, 'uid'>, readonly parent_category: Maybe<(
-            Pick<PRISMIC_Category, 'title'>
-            & { readonly _meta: Pick<PRISMIC_Meta, 'uid'> }
-          )> }
-        ) }
-      )>>>, readonly pageInfo: Pick<PRISMIC_PageInfo, 'hasNextPage' | 'endCursor'> }
-    ) } };
-
-type Unnamed_5_QueryVariables = {};
-
-
-type Unnamed_5_Query = { readonly prismic: { readonly allCommons: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: (
+type Unnamed_3_Query = { readonly prismic: { readonly allCommons: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: (
           Pick<PRISMIC_Common, 'copyright_text'>
           & { readonly social_links: Maybe<ReadonlyArray<(
             Pick<PRISMIC_CommonSocial_links, 'social_type'>
@@ -4894,10 +4854,24 @@ type Unnamed_5_Query = { readonly prismic: { readonly allCommons: { readonly edg
           )>> }
         ) }>>> } } };
 
-type Unnamed_6_QueryVariables = {};
+type Unnamed_4_QueryVariables = {};
 
 
-type Unnamed_6_Query = { readonly prismic: { readonly firstData: (
+type Unnamed_4_Query = { readonly allShopifyProduct: { readonly edges: ReadonlyArray<{ readonly node: (
+        Pick<ShopifyProduct, 'id' | 'title' | 'handle' | 'createdAt' | 'shopifyId' | 'availableForSale'>
+        & { readonly variants: Maybe<ReadonlyArray<Maybe<(
+          Pick<ShopifyProductVariant, 'id' | 'price' | 'shopifyId' | 'availableForSale'>
+          & { readonly priceV2: Maybe<Pick<ShopifyProductVariantPriceV2, 'amount' | 'currencyCode'>> }
+        )>>>, readonly images: Maybe<ReadonlyArray<Maybe<(
+          Pick<ShopifyProductImages, 'id' | 'originalSrc'>
+          & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebp_tracedSVGFragment> }> }> }
+        )>>> }
+      ) }> } };
+
+type Unnamed_5_QueryVariables = {};
+
+
+type Unnamed_5_Query = { readonly prismic: { readonly firstData: (
       Pick<PRISMIC_CategoryConnectionConnection, 'totalCount'>
       & { readonly edges: Maybe<ReadonlyArray<Maybe<(
         Pick<PRISMIC_CategoryConnectionEdge, 'cursor'>
@@ -4923,25 +4897,55 @@ type Unnamed_6_Query = { readonly prismic: { readonly firstData: (
       )>>>, readonly pageInfo: Pick<PRISMIC_PageInfo, 'hasNextPage' | 'endCursor'> }
     ) } };
 
+type Unnamed_6_QueryVariables = {};
+
+
+type Unnamed_6_Query = { readonly prismic: { readonly allCommons: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: Pick<PRISMIC_Common, 'logo'> }>>> } } };
+
 type Unnamed_7_QueryVariables = {};
 
 
-type Unnamed_7_Query = { readonly prismic: { readonly allCommons: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: Pick<PRISMIC_Common, 'logo'> }>>> } } };
+type Unnamed_7_Query = { readonly prismic: { readonly allCommons: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: (
+          Pick<PRISMIC_Common, 'copyright_text'>
+          & { readonly social_links: Maybe<ReadonlyArray<(
+            Pick<PRISMIC_CommonSocial_links, 'social_type'>
+            & { readonly social_link: Maybe<Pick<PRISMIC__ExternalLink, 'url'>> }
+          )>> }
+        ) }>>> } } };
 
 type Unnamed_8_QueryVariables = {};
 
 
-type Unnamed_8_Query = { readonly prismic: { readonly allCommons: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: Pick<PRISMIC_Common, 'top_header_color' | 'special_notice_title' | 'header_notice_switch'> }>>> } } };
+type Unnamed_8_Query = { readonly prismic: { readonly firstData: (
+      Pick<PRISMIC_CategoryConnectionConnection, 'totalCount'>
+      & { readonly edges: Maybe<ReadonlyArray<Maybe<(
+        Pick<PRISMIC_CategoryConnectionEdge, 'cursor'>
+        & { readonly node: (
+          Pick<PRISMIC_Category, 'title'>
+          & { readonly _meta: Pick<PRISMIC_Meta, 'uid'>, readonly parent_category: Maybe<(
+            Pick<PRISMIC_Category, 'title'>
+            & { readonly _meta: Pick<PRISMIC_Meta, 'uid'> }
+          )> }
+        ) }
+      )>>>, readonly pageInfo: Pick<PRISMIC_PageInfo, 'hasNextPage' | 'endCursor'> }
+    ), readonly lastData: (
+      Pick<PRISMIC_CategoryConnectionConnection, 'totalCount'>
+      & { readonly edges: Maybe<ReadonlyArray<Maybe<(
+        Pick<PRISMIC_CategoryConnectionEdge, 'cursor'>
+        & { readonly node: (
+          Pick<PRISMIC_Category, 'title'>
+          & { readonly _meta: Pick<PRISMIC_Meta, 'uid'>, readonly parent_category: Maybe<(
+            Pick<PRISMIC_Category, 'title'>
+            & { readonly _meta: Pick<PRISMIC_Meta, 'uid'> }
+          )> }
+        ) }
+      )>>>, readonly pageInfo: Pick<PRISMIC_PageInfo, 'hasNextPage' | 'endCursor'> }
+    ) } };
 
 type Unnamed_9_QueryVariables = {};
 
 
-type Unnamed_9_Query = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>> }> };
-
-type Unnamed_10_QueryVariables = {};
-
-
-type Unnamed_10_Query = { readonly allShopifyProduct: { readonly edges: ReadonlyArray<{ readonly node: (
+type Unnamed_9_Query = { readonly allShopifyProduct: { readonly edges: ReadonlyArray<{ readonly node: (
         Pick<ShopifyProduct, 'id' | 'title' | 'tags' | 'handle' | 'createdAt' | 'shopifyId' | 'availableForSale'>
         & { readonly variants: Maybe<ReadonlyArray<Maybe<(
           Pick<ShopifyProductVariant, 'id' | 'price' | 'shopifyId' | 'availableForSale'>
@@ -4951,6 +4955,11 @@ type Unnamed_10_Query = { readonly allShopifyProduct: { readonly edges: Readonly
           & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebp_tracedSVGFragment> }> }> }
         )>>> }
       ) }> } };
+
+type Unnamed_10_QueryVariables = {};
+
+
+type Unnamed_10_Query = { readonly prismic: { readonly allCommons: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: Pick<PRISMIC_Common, 'top_header_color' | 'special_notice_title' | 'header_notice_switch'> }>>> } } };
 
 type Unnamed_11_QueryVariables = {};
 
@@ -4969,7 +4978,12 @@ type Unnamed_11_Query = { readonly allShopifyProduct: { readonly edges: Readonly
 type Unnamed_12_QueryVariables = {};
 
 
-type Unnamed_12_Query = { readonly prismic: { readonly allHomes: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: (
+type Unnamed_12_Query = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>> }> };
+
+type Unnamed_13_QueryVariables = {};
+
+
+type Unnamed_13_Query = { readonly prismic: { readonly allHomes: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: (
           Pick<PRISMIC_Home, 'banner' | 'banner_button_text' | 'banner_subtitle' | 'banner_title' | 'call_us_banner' | 'call_us_button_text' | 'call_us_title' | 'how_it_works_subtitle' | 'how_it_works_title' | 'trending_block_title' | 'view_more_text'>
           & { readonly category_block: Maybe<ReadonlyArray<(
             Pick<PRISMIC_HomeCategory_block, 'category_slug' | 'category_title' | 'image'>
@@ -4977,10 +4991,15 @@ type Unnamed_12_Query = { readonly prismic: { readonly allHomes: { readonly edge
           )>>, readonly how_it_works_group: Maybe<ReadonlyArray<Pick<PRISMIC_HomeHow_it_works_group, 'title' | 'description' | 'image'>>> }
         ) }>>> } } };
 
-type Unnamed_13_QueryVariables = {};
+type Unnamed_14_QueryVariables = {};
 
 
-type Unnamed_13_Query = { readonly prismic: { readonly allHomeminimals: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: (
+type Unnamed_14_Query = { readonly prismic: { readonly allHomemoderns: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: Pick<PRISMIC_Homemodern, 'banner_title' | 'banner_subtitle' | 'banner_image'> }>>> }, readonly allCommons: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: { readonly ad_blocks: Maybe<ReadonlyArray<Pick<PRISMIC_CommonAd_blocks, 'badge_title' | 'badge_color' | 'title' | 'block_image' | 'short_description' | 'add_a_button' | 'button_title'>>> } }>>> } } };
+
+type Unnamed_15_QueryVariables = {};
+
+
+type Unnamed_15_Query = { readonly prismic: { readonly allHomeminimals: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: (
           Pick<PRISMIC_Homeminimal, 'banner_title' | 'banner_subtitle' | 'banner_button_text' | 'banner_image' | 'call_us_banner' | 'call_us_banner_content' | 'call_us_button_text'>
           & { readonly how_it_works: Maybe<ReadonlyArray<Pick<PRISMIC_HomeminimalHow_it_works, 'thumbnail' | 'title' | 'short_description'>>> }
         ) }>>> }, readonly allHomes: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: (
@@ -4990,30 +5009,6 @@ type Unnamed_13_Query = { readonly prismic: { readonly allHomeminimals: { readon
             & { readonly imageSharp: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebp_tracedSVGFragment> }> }> }
           )>> }
         ) }>>> }, readonly allCommons: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: { readonly ad_blocks: Maybe<ReadonlyArray<Pick<PRISMIC_CommonAd_blocks, 'badge_title' | 'badge_color' | 'title' | 'block_image' | 'short_description' | 'add_a_button' | 'button_title'>>> } }>>> } } };
-
-type Unnamed_14_QueryVariables = {};
-
-
-type Unnamed_14_Query = { readonly prismic: { readonly allHomemoderns: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: Pick<PRISMIC_Homemodern, 'banner_title' | 'banner_subtitle' | 'banner_image'> }>>> }, readonly allCommons: { readonly edges: Maybe<ReadonlyArray<Maybe<{ readonly node: { readonly ad_blocks: Maybe<ReadonlyArray<Pick<PRISMIC_CommonAd_blocks, 'badge_title' | 'badge_color' | 'title' | 'block_image' | 'short_description' | 'add_a_button' | 'button_title'>>> } }>>> } } };
-
-type Unnamed_15_QueryVariables = {
-  handle: Scalars['String'];
-};
-
-
-type Unnamed_15_Query = { readonly shopifyCollection: Maybe<{ readonly image: Maybe<(
-      Pick<ShopifyCollectionImage, 'id' | 'src'>
-      & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebp_tracedSVGFragment> }> }> }
-    )>, readonly products: Maybe<ReadonlyArray<Maybe<(
-      Pick<ShopifyProduct, 'id' | 'title' | 'handle' | 'createdAt' | 'shopifyId' | 'availableForSale'>
-      & { readonly variants: Maybe<ReadonlyArray<Maybe<(
-        Pick<ShopifyProductVariant, 'id' | 'price' | 'shopifyId' | 'availableForSale'>
-        & { readonly priceV2: Maybe<Pick<ShopifyProductVariantPriceV2, 'amount' | 'currencyCode'>> }
-      )>>>, readonly images: Maybe<ReadonlyArray<Maybe<(
-        Pick<ShopifyProductImages, 'id' | 'originalSrc'>
-        & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebp_tracedSVGFragment> }> }> }
-      )>>> }
-    )>>> }> };
 
 type Unnamed_16_QueryVariables = {
   handle: Scalars['String'];
@@ -5058,7 +5053,26 @@ type Unnamed_18_QueryVariables = {
 };
 
 
-type Unnamed_18_Query = { readonly shopifyProduct: Maybe<(
+type Unnamed_18_Query = { readonly shopifyCollection: Maybe<{ readonly image: Maybe<(
+      Pick<ShopifyCollectionImage, 'id' | 'src'>
+      & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebp_tracedSVGFragment> }> }> }
+    )>, readonly products: Maybe<ReadonlyArray<Maybe<(
+      Pick<ShopifyProduct, 'id' | 'title' | 'handle' | 'createdAt' | 'shopifyId' | 'availableForSale'>
+      & { readonly variants: Maybe<ReadonlyArray<Maybe<(
+        Pick<ShopifyProductVariant, 'id' | 'price' | 'shopifyId' | 'availableForSale'>
+        & { readonly priceV2: Maybe<Pick<ShopifyProductVariantPriceV2, 'amount' | 'currencyCode'>> }
+      )>>>, readonly images: Maybe<ReadonlyArray<Maybe<(
+        Pick<ShopifyProductImages, 'id' | 'originalSrc'>
+        & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebp_tracedSVGFragment> }> }> }
+      )>>> }
+    )>>> }> };
+
+type Unnamed_19_QueryVariables = {
+  handle: Scalars['String'];
+};
+
+
+type Unnamed_19_Query = { readonly shopifyProduct: Maybe<(
     Pick<ShopifyProduct, 'title' | 'description' | 'tags' | 'createdAt' | 'shopifyId' | 'availableForSale'>
     & { readonly variants: Maybe<ReadonlyArray<Maybe<(
       Pick<ShopifyProductVariant, 'id' | 'price' | 'shopifyId' | 'availableForSale'>
@@ -5125,19 +5139,5 @@ type GatsbyImageSharpSizes_withWebp_tracedSVGFragment = Pick<ImageSharpSizes, 't
 type GatsbyImageSharpSizes_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpSizes_withWebp_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-type Unnamed_19_QueryVariables = {};
-
-
-type Unnamed_19_Query = { readonly allShopifyProduct: { readonly edges: ReadonlyArray<{ readonly node: (
-        Pick<ShopifyProduct, 'id' | 'title' | 'handle' | 'createdAt' | 'shopifyId' | 'availableForSale'>
-        & { readonly variants: Maybe<ReadonlyArray<Maybe<(
-          Pick<ShopifyProductVariant, 'id' | 'price' | 'shopifyId' | 'availableForSale'>
-          & { readonly priceV2: Maybe<Pick<ShopifyProductVariantPriceV2, 'amount' | 'currencyCode'>> }
-        )>>>, readonly images: Maybe<ReadonlyArray<Maybe<(
-          Pick<ShopifyProductImages, 'id' | 'originalSrc'>
-          & { readonly localFile: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebp_tracedSVGFragment> }> }> }
-        )>>> }
-      ) }> } };
 
 }
