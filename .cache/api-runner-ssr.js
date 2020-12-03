@@ -1,22 +1,22 @@
 var plugins = [
   {
-    plugin: require('/Users/owais/Documents/mandib2c/node_modules/gatsby-plugin-theme-ui/gatsby-ssr'),
+    plugin: require('C:/NEW VOLUME D/Codes And Programs/Mandi Express/B2C PWA/node_modules/gatsby-plugin-theme-ui/gatsby-ssr'),
     options: { plugins: [] },
   },
   {
-    plugin: require('/Users/owais/Documents/mandib2c/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+    plugin: require('C:/NEW VOLUME D/Codes And Programs/Mandi Express/B2C PWA/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
     options: { plugins: [] },
   },
   {
-    plugin: require('/Users/owais/Documents/mandib2c/node_modules/gatsby-plugin-layout/gatsby-ssr'),
+    plugin: require('C:/NEW VOLUME D/Codes And Programs/Mandi Express/B2C PWA/node_modules/gatsby-plugin-layout/gatsby-ssr'),
     options: {
       plugins: [],
       component:
-        '/Users/owais/Documents/mandib2c/src/components/layout/layout.tsx',
+        'C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\src\\components\\layout\\layout.tsx',
     },
   },
   {
-    plugin: require('/Users/owais/Documents/mandib2c/node_modules/gatsby-source-prismic-graphql/gatsby-ssr'),
+    plugin: require('C:/NEW VOLUME D/Codes And Programs/Mandi Express/B2C PWA/node_modules/gatsby-source-prismic-graphql/gatsby-ssr'),
     options: {
       plugins: [],
       repositoryName: 'mandixpress',
@@ -26,7 +26,7 @@ var plugins = [
     },
   },
   {
-    plugin: require('/Users/owais/Documents/mandib2c/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
+    plugin: require('C:/NEW VOLUME D/Codes And Programs/Mandi Express/B2C PWA/node_modules/gatsby-plugin-google-fonts/gatsby-ssr'),
     options: {
       plugins: [],
       fonts: ['Open Sans:400,600,700', 'Poppins:400,600,700'],
@@ -34,7 +34,7 @@ var plugins = [
     },
   },
   {
-    plugin: require('/Users/owais/Documents/mandib2c/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+    plugin: require('C:/NEW VOLUME D/Codes And Programs/Mandi Express/B2C PWA/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
     options: {
       plugins: [],
       name: 'Picksy',
@@ -52,7 +52,7 @@ var plugins = [
     },
   },
   {
-    plugin: require('/Users/owais/Documents/mandib2c/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+    plugin: require('C:/NEW VOLUME D/Codes And Programs/Mandi Express/B2C PWA/node_modules/gatsby-plugin-offline/gatsby-ssr'),
     options: { plugins: [] },
   },
 ];

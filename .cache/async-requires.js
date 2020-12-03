@@ -2,9 +2,9 @@
 const preferDefault = (m) => (m && m.default) || m;
 
 exports.components = {
-  'component---cache-caches-gatsby-plugin-offline-app-shell-js': () =>
+  'component---cache-dev-404-page-js': () =>
     import(
-      './caches/gatsby-plugin-offline/app-shell.js' /* webpackChunkName: "component---cache-caches-gatsby-plugin-offline-app-shell-js" */
+      './dev-404-page.js' /* webpackChunkName: "component---cache-dev-404-page-js" */
     ),
   'component---node-modules-gatsby-source-prismic-graphql-components-preview-page-js': () =>
     import(

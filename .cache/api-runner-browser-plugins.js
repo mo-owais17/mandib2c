@@ -8,7 +8,7 @@ module.exports = [
     options: {
       plugins: [],
       component:
-        '/Users/owais/Documents/mandib2c/src/components/layout/layout.tsx',
+        'C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\src\\components\\layout\\layout.tsx',
     },
   },
   {

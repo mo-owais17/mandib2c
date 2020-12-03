@@ -32,7 +32,7 @@ const TreeMenu: React.FC<Props> = ({ items }) => {
 		setSubMenu(subMenu);
 		let menu: any = null;
 		items.forEach((item: any) => {
-			const index = item.submenu.findIndex((menu: any) => menu.path == subMenu);
+			const index = item.submenu?.findIndex((menu: any) => menu.path == subMenu);
 			if (index > -1) {
 				menu = setTimeout(() => setSelectedItem(item.path), 100);
 			}

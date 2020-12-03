@@ -4,52 +4,54 @@ const { hot } = require('react-hot-loader/root');
 const preferDefault = (m) => (m && m.default) || m;
 
 exports.components = {
-  'component---cache-caches-gatsby-plugin-offline-app-shell-js': hot(
+  'component---cache-dev-404-page-js': hot(
     preferDefault(
-      require('/Users/owais/Documents/mandib2c/.cache/caches/gatsby-plugin-offline/app-shell.js')
+      require('C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\.cache\\dev-404-page.js')
     )
   ),
   'component---node-modules-gatsby-source-prismic-graphql-components-preview-page-js': hot(
     preferDefault(
-      require('/Users/owais/Documents/mandib2c/node_modules/gatsby-source-prismic-graphql/components/PreviewPage.js')
+      require('C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\node_modules\\gatsby-source-prismic-graphql\\components\\PreviewPage.js')
     )
   ),
   'component---src-pages-404-tsx': hot(
-    preferDefault(require('/Users/owais/Documents/mandib2c/src/pages/404.tsx'))
+    preferDefault(
+      require('C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\src\\pages\\404.tsx')
+    )
   ),
   'component---src-pages-index-tsx': hot(
     preferDefault(
-      require('/Users/owais/Documents/mandib2c/src/pages/index.tsx')
+      require('C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\src\\pages\\index.tsx')
     )
   ),
   'component---src-pages-minimal-tsx': hot(
     preferDefault(
-      require('/Users/owais/Documents/mandib2c/src/pages/minimal.tsx')
+      require('C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\src\\pages\\minimal.tsx')
     )
   ),
   'component---src-pages-modern-tsx': hot(
     preferDefault(
-      require('/Users/owais/Documents/mandib2c/src/pages/modern.tsx')
+      require('C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\src\\pages\\modern.tsx')
     )
   ),
   'component---src-templates-category-page-sidebar-tsx': hot(
     preferDefault(
-      require('/Users/owais/Documents/mandib2c/src/templates/category-page-sidebar.tsx')
+      require('C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\src\\templates\\category-page-sidebar.tsx')
     )
   ),
   'component---src-templates-category-page-tsx': hot(
     preferDefault(
-      require('/Users/owais/Documents/mandib2c/src/templates/category-page.tsx')
+      require('C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\src\\templates\\category-page.tsx')
     )
   ),
   'component---src-templates-minimal-category-page-tsx': hot(
     preferDefault(
-      require('/Users/owais/Documents/mandib2c/src/templates/minimal-category-page.tsx')
+      require('C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\src\\templates\\minimal-category-page.tsx')
     )
   ),
   'component---src-templates-product-page-tsx': hot(
     preferDefault(
-      require('/Users/owais/Documents/mandib2c/src/templates/product-page.tsx')
+      require('C:\\NEW VOLUME D\\Codes And Programs\\Mandi Express\\B2C PWA\\src\\templates\\product-page.tsx')
     )
   ),
 };
